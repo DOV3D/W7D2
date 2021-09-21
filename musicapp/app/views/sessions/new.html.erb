@@ -1,0 +1,22 @@
+<h2>Sign-in Page</h2>
+
+<a href="<%= new_user_url %>" >Go to Sign-up!</a>
+
+<form action="<%= session_url %>" method="post">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <p>
+    <label for="email">Email</label>
+    <input id="email" type="text" name="user[email]">
+  </p>
+
+  <p>
+    <label for="password">Password</label>
+    <input id="password" type="password" name="user[password]">
+  </p>
+
+  <input type="submit" value="submit">
+</form>

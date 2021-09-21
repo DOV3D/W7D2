@@ -1,0 +1,14 @@
+<h2>Create your band</h2>
+<form action="<%= bands_url %>" method="POST">
+  <input
+    type="hidden"
+    name="authenticity_token"
+    value="<%= form_authenticity_token %>">
+
+  <p>
+    <label for="band_name">Name: </label>
+    <input id="band_name" type="text" name="band[name]" value="<%= band.name %>">
+  </p>
+
+  <input type="submit" value="Create band">
+</form>
