@@ -311,3 +311,7 @@ Migrating to CreateAlbums (20210921205900)
   ↳ bin/rails:9
   [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/davidvelazquez/.rbenv/versions/2.5.1/bin/annotate:25
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE "musicapp_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (128.5ms)[0m  [1m[35mCREATE DATABASE "music_db_test" ENCODING = 'utf8'[0m
+  ↳ bin/rails:9
